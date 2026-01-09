@@ -10,5 +10,5 @@ ORLtest.exe:
 Compiled from ORL_main.cpp, the value of K (number of Eigenfaces) is set to be 40.
 由ORL_main.cpp编译得到，K值（特征脸数量）设置为40
 stb_image.h/stb_image_write.h
-cr:https://github.com/Gnimuc/STBImageBuilder \n
+cr:https://github.com/Gnimuc/STBImageBuilder
 用于读取png files
