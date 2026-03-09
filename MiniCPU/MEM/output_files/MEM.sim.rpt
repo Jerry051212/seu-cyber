@@ -1,0 +1,624 @@
+Simulator report for MEM
+Wed Nov 13 19:26:41 2024
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|ALTSYNCRAM
+  6. |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|ALTSYNCRAM
+  7. Coverage Summary
+  8. Complete 1/0-Value Coverage
+  9. Missing 1-Value Coverage
+ 10. Missing 0-Value Coverage
+ 11. Simulator INI Usage
+ 12. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 119 nodes    ;
+; Simulation Coverage         ;      63.03 % ;
+; Total Number of Transitions ; 7820         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|ALTSYNCRAM ;
++-----------------------------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++-----------------------------------------------------------------------------------------------------------+
+; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|ALTSYNCRAM ;
++-----------------------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      63.03 % ;
+; Total nodes checked                                 ; 119          ;
+; Total output ports checked                          ; 119          ;
+; Total output ports with complete 1/0-value coverage ; 75           ;
+; Total output ports with no 1/0-value coverage       ; 26           ;
+; Total output ports with no 1-value coverage         ; 42           ;
+; Total output ports with no 0-value coverage         ; 28           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                            ;
++-------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                   ; Output Port Name                                                                                      ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+; |MEM|CRT[6]                                                                                                 ; |MEM|CRT[6]                                                                                           ; pin_out          ;
+; |MEM|CRT[5]                                                                                                 ; |MEM|CRT[5]                                                                                           ; pin_out          ;
+; |MEM|CRT[4]                                                                                                 ; |MEM|CRT[4]                                                                                           ; pin_out          ;
+; |MEM|CRT[3]                                                                                                 ; |MEM|CRT[3]                                                                                           ; pin_out          ;
+; |MEM|CRT[2]                                                                                                 ; |MEM|CRT[2]                                                                                           ; pin_out          ;
+; |MEM|CRT[1]                                                                                                 ; |MEM|CRT[1]                                                                                           ; pin_out          ;
+; |MEM|CRT[0]                                                                                                 ; |MEM|CRT[0]                                                                                           ; pin_out          ;
+; |MEM|gdfx_temp0[6]                                                                                          ; |MEM|gdfx_temp0[6]                                                                                    ; out0             ;
+; |MEM|gdfx_temp0[5]                                                                                          ; |MEM|gdfx_temp0[5]                                                                                    ; out0             ;
+; |MEM|gdfx_temp0[4]                                                                                          ; |MEM|gdfx_temp0[4]                                                                                    ; out0             ;
+; |MEM|gdfx_temp0[3]                                                                                          ; |MEM|gdfx_temp0[3]                                                                                    ; out0             ;
+; |MEM|gdfx_temp0[2]                                                                                          ; |MEM|gdfx_temp0[2]                                                                                    ; out0             ;
+; |MEM|gdfx_temp0[1]                                                                                          ; |MEM|gdfx_temp0[1]                                                                                    ; out0             ;
+; |MEM|gdfx_temp0[0]                                                                                          ; |MEM|gdfx_temp0[0]                                                                                    ; out0             ;
+; |MEM|G_KEY                                                                                                  ; |MEM|G_KEY                                                                                            ; out              ;
+; |MEM|KEY[6]                                                                                                 ; |MEM|KEY[6]                                                                                           ; out              ;
+; |MEM|KEY[5]                                                                                                 ; |MEM|KEY[5]                                                                                           ; out              ;
+; |MEM|KEY[4]                                                                                                 ; |MEM|KEY[4]                                                                                           ; out              ;
+; |MEM|KEY[3]                                                                                                 ; |MEM|KEY[3]                                                                                           ; out              ;
+; |MEM|KEY[2]                                                                                                 ; |MEM|KEY[2]                                                                                           ; out              ;
+; |MEM|KEY[0]                                                                                                 ; |MEM|KEY[0]                                                                                           ; out              ;
+; |MEM|G_MEM                                                                                                  ; |MEM|G_MEM                                                                                            ; out              ;
+; |MEM|wen_MEM                                                                                                ; |MEM|wen_MEM                                                                                          ; out              ;
+; |MEM|CLK                                                                                                    ; |MEM|CLK                                                                                              ; out              ;
+; |MEM|wen_LA                                                                                                 ; |MEM|wen_LA                                                                                           ; out              ;
+; |MEM|MA[6]                                                                                                  ; |MEM|MA[6]                                                                                            ; pin_out          ;
+; |MEM|MA[5]                                                                                                  ; |MEM|MA[5]                                                                                            ; pin_out          ;
+; |MEM|MA[4]                                                                                                  ; |MEM|MA[4]                                                                                            ; pin_out          ;
+; |MEM|MA[3]                                                                                                  ; |MEM|MA[3]                                                                                            ; pin_out          ;
+; |MEM|MA[2]                                                                                                  ; |MEM|MA[2]                                                                                            ; pin_out          ;
+; |MEM|MA[0]                                                                                                  ; |MEM|MA[0]                                                                                            ; pin_out          ;
+; |MEM|MDO[5]                                                                                                 ; |MEM|MDO[5]                                                                                           ; pin_out          ;
+; |MEM|MDO[4]                                                                                                 ; |MEM|MDO[4]                                                                                           ; pin_out          ;
+; |MEM|MDO[2]                                                                                                 ; |MEM|MDO[2]                                                                                           ; pin_out          ;
+; |MEM|MDO[1]                                                                                                 ; |MEM|MDO[1]                                                                                           ; pin_out          ;
+; |MEM|MDO[0]                                                                                                 ; |MEM|MDO[0]                                                                                           ; pin_out          ;
+; |MEM|lpm_dff:inst1|dffs[6]                                                                                  ; |MEM|lpm_dff:inst1|dffs[6]                                                                            ; regout           ;
+; |MEM|lpm_dff:inst1|dffs[5]                                                                                  ; |MEM|lpm_dff:inst1|dffs[5]                                                                            ; regout           ;
+; |MEM|lpm_dff:inst1|dffs[4]                                                                                  ; |MEM|lpm_dff:inst1|dffs[4]                                                                            ; regout           ;
+; |MEM|lpm_dff:inst1|dffs[3]                                                                                  ; |MEM|lpm_dff:inst1|dffs[3]                                                                            ; regout           ;
+; |MEM|lpm_dff:inst1|dffs[2]                                                                                  ; |MEM|lpm_dff:inst1|dffs[2]                                                                            ; regout           ;
+; |MEM|lpm_dff:inst1|dffs[0]                                                                                  ; |MEM|lpm_dff:inst1|dffs[0]                                                                            ; regout           ;
+; |MEM|Block2:inst6|inst3                                                                                     ; |MEM|Block2:inst6|inst3                                                                               ; out0             ;
+; |MEM|Block2:inst6|inst                                                                                      ; |MEM|Block2:inst6|inst                                                                                ; out0             ;
+; |MEM|Block2:inst6|lpm_rom:inst1|otri[5]                                                                     ; |MEM|Block2:inst6|lpm_rom:inst1|otri[5]                                                               ; out              ;
+; |MEM|Block2:inst6|lpm_rom:inst1|otri[4]                                                                     ; |MEM|Block2:inst6|lpm_rom:inst1|otri[4]                                                               ; out              ;
+; |MEM|Block2:inst6|lpm_rom:inst1|otri[1]                                                                     ; |MEM|Block2:inst6|lpm_rom:inst1|otri[1]                                                               ; out              ;
+; |MEM|Block2:inst6|lpm_rom:inst1|otri[0]                                                                     ; |MEM|Block2:inst6|lpm_rom:inst1|otri[0]                                                               ; out              ;
+; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|ram_block1a0 ; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|q_a[0] ; portadataout0    ;
+; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|ram_block1a1 ; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|q_a[1] ; portadataout0    ;
+; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|ram_block1a2 ; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|q_a[2] ; portadataout0    ;
+; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|ram_block1a4 ; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|q_a[4] ; portadataout0    ;
+; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|ram_block1a5 ; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|q_a[5] ; portadataout0    ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[5]~5          ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[5]~5    ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[5]            ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[5]      ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[4]~7          ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[4]~7    ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[4]            ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[4]      ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[2]~11         ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[2]~11   ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[2]            ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[2]      ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[1]~13         ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[1]~13   ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[1]            ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[1]      ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[0]~15         ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[0]~15   ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[0]            ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[0]      ; out0             ;
+; |MEM|lpm_bustri:inst2|dout[5]                                                                               ; |MEM|lpm_bustri:inst2|dout[5]                                                                         ; out              ;
+; |MEM|lpm_bustri:inst2|dout[4]                                                                               ; |MEM|lpm_bustri:inst2|dout[4]                                                                         ; out              ;
+; |MEM|lpm_bustri:inst2|dout[2]                                                                               ; |MEM|lpm_bustri:inst2|dout[2]                                                                         ; out              ;
+; |MEM|lpm_bustri:inst2|dout[1]                                                                               ; |MEM|lpm_bustri:inst2|dout[1]                                                                         ; out              ;
+; |MEM|lpm_bustri:inst2|dout[0]                                                                               ; |MEM|lpm_bustri:inst2|dout[0]                                                                         ; out              ;
+; |MEM|lpm_bustri:inst|dout[6]                                                                                ; |MEM|lpm_bustri:inst|dout[6]                                                                          ; out              ;
+; |MEM|lpm_bustri:inst|dout[5]                                                                                ; |MEM|lpm_bustri:inst|dout[5]                                                                          ; out              ;
+; |MEM|lpm_bustri:inst|dout[4]                                                                                ; |MEM|lpm_bustri:inst|dout[4]                                                                          ; out              ;
+; |MEM|lpm_bustri:inst|dout[3]                                                                                ; |MEM|lpm_bustri:inst|dout[3]                                                                          ; out              ;
+; |MEM|lpm_bustri:inst|dout[2]                                                                                ; |MEM|lpm_bustri:inst|dout[2]                                                                          ; out              ;
+; |MEM|lpm_bustri:inst|dout[1]                                                                                ; |MEM|lpm_bustri:inst|dout[1]                                                                          ; out              ;
+; |MEM|lpm_bustri:inst|dout[0]                                                                                ; |MEM|lpm_bustri:inst|dout[0]                                                                          ; out              ;
++-------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                                           ;
++-------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                         ; Output Port Name                                                                                            ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+
+; |MEM|CRT[7]                                                                                                       ; |MEM|CRT[7]                                                                                                 ; pin_out          ;
+; |MEM|gdfx_temp0[7]                                                                                                ; |MEM|gdfx_temp0[7]                                                                                          ; out0             ;
+; |MEM|KEY[7]                                                                                                       ; |MEM|KEY[7]                                                                                                 ; out              ;
+; |MEM|MA[7]                                                                                                        ; |MEM|MA[7]                                                                                                  ; pin_out          ;
+; |MEM|MA[1]                                                                                                        ; |MEM|MA[1]                                                                                                  ; pin_out          ;
+; |MEM|MDO[7]                                                                                                       ; |MEM|MDO[7]                                                                                                 ; pin_out          ;
+; |MEM|MDO[6]                                                                                                       ; |MEM|MDO[6]                                                                                                 ; pin_out          ;
+; |MEM|MDO[3]                                                                                                       ; |MEM|MDO[3]                                                                                                 ; pin_out          ;
+; |MEM|lpm_dff:inst1|dffs[7]                                                                                        ; |MEM|lpm_dff:inst1|dffs[7]                                                                                  ; regout           ;
+; |MEM|lpm_dff:inst1|dffs[1]                                                                                        ; |MEM|lpm_dff:inst1|dffs[1]                                                                                  ; regout           ;
+; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|ram_block1a0 ; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|q_b[0] ; portbdataout0    ;
+; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|ram_block1a1 ; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|q_b[1] ; portbdataout0    ;
+; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|ram_block1a2 ; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|q_b[2] ; portbdataout0    ;
+; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|ram_block1a3 ; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|q_b[3] ; portbdataout0    ;
+; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|ram_block1a4 ; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|q_b[4] ; portbdataout0    ;
+; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|ram_block1a5 ; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|q_b[5] ; portbdataout0    ;
+; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|ram_block1a6 ; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|q_b[6] ; portbdataout0    ;
+; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|ram_block1a7 ; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|q_b[7] ; portbdataout0    ;
+; |MEM|Block2:inst6|lpm_rom:inst1|otri[7]                                                                           ; |MEM|Block2:inst6|lpm_rom:inst1|otri[7]                                                                     ; out              ;
+; |MEM|Block2:inst6|lpm_rom:inst1|otri[6]                                                                           ; |MEM|Block2:inst6|lpm_rom:inst1|otri[6]                                                                     ; out              ;
+; |MEM|Block2:inst6|lpm_rom:inst1|otri[3]                                                                           ; |MEM|Block2:inst6|lpm_rom:inst1|otri[3]                                                                     ; out              ;
+; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|ram_block1a3       ; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|q_a[3]       ; portadataout0    ;
+; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|ram_block1a6       ; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|q_a[6]       ; portadataout0    ;
+; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|ram_block1a7       ; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|q_a[7]       ; portadataout0    ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[7]~0                ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[7]~0          ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[7]~1                ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[7]~1          ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[7]                  ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[7]            ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[6]~2                ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[6]~2          ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[6]~3                ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[6]~3          ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[6]                  ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[6]            ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[5]~4                ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[5]~4          ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[4]~6                ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[4]~6          ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[3]~8                ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[3]~8          ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[3]~9                ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[3]~9          ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[3]                  ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[3]            ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[2]~10               ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[2]~10         ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[1]~12               ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[1]~12         ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[0]~14               ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[0]~14         ; out0             ;
+; |MEM|lpm_bustri:inst2|dout[7]                                                                                     ; |MEM|lpm_bustri:inst2|dout[7]                                                                               ; out              ;
+; |MEM|lpm_bustri:inst2|dout[6]                                                                                     ; |MEM|lpm_bustri:inst2|dout[6]                                                                               ; out              ;
+; |MEM|lpm_bustri:inst2|dout[3]                                                                                     ; |MEM|lpm_bustri:inst2|dout[3]                                                                               ; out              ;
+; |MEM|lpm_bustri:inst|dout[7]                                                                                      ; |MEM|lpm_bustri:inst|dout[7]                                                                                ; out              ;
++-------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                                           ;
++-------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                         ; Output Port Name                                                                                            ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+
+; |MEM|CRT[7]                                                                                                       ; |MEM|CRT[7]                                                                                                 ; pin_out          ;
+; |MEM|gdfx_temp0[7]                                                                                                ; |MEM|gdfx_temp0[7]                                                                                          ; out0             ;
+; |MEM|KEY[7]                                                                                                       ; |MEM|KEY[7]                                                                                                 ; out              ;
+; |MEM|KEY[1]                                                                                                       ; |MEM|KEY[1]                                                                                                 ; out              ;
+; |MEM|MA[7]                                                                                                        ; |MEM|MA[7]                                                                                                  ; pin_out          ;
+; |MEM|MA[1]                                                                                                        ; |MEM|MA[1]                                                                                                  ; pin_out          ;
+; |MEM|lpm_dff:inst1|dffs[7]                                                                                        ; |MEM|lpm_dff:inst1|dffs[7]                                                                                  ; regout           ;
+; |MEM|lpm_dff:inst1|dffs[1]                                                                                        ; |MEM|lpm_dff:inst1|dffs[1]                                                                                  ; regout           ;
+; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|ram_block1a0 ; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|q_b[0] ; portbdataout0    ;
+; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|ram_block1a1 ; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|q_b[1] ; portbdataout0    ;
+; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|ram_block1a2 ; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|q_b[2] ; portbdataout0    ;
+; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|ram_block1a3 ; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|q_b[3] ; portbdataout0    ;
+; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|ram_block1a4 ; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|q_b[4] ; portbdataout0    ;
+; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|ram_block1a5 ; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|q_b[5] ; portbdataout0    ;
+; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|ram_block1a6 ; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|q_b[6] ; portbdataout0    ;
+; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|ram_block1a7 ; |MEM|Block2:inst6|lpm_ram_dp:inst0|altdpram:sram|altsyncram:ram_block|altsyncram_92r1:auto_generated|q_b[7] ; portbdataout0    ;
+; |MEM|Block2:inst6|lpm_rom:inst1|otri[2]                                                                           ; |MEM|Block2:inst6|lpm_rom:inst1|otri[2]                                                                     ; out              ;
+; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|ram_block1a3       ; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|q_a[3]       ; portadataout0    ;
+; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|ram_block1a6       ; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|q_a[6]       ; portadataout0    ;
+; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|ram_block1a7       ; |MEM|Block2:inst6|lpm_rom:inst1|altrom:srom|altsyncram:rom_block|altsyncram_hrv:auto_generated|q_a[7]       ; portadataout0    ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[7]~0                ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[7]~0          ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[6]~2                ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[6]~2          ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[5]~4                ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[5]~4          ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[4]~6                ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[4]~6          ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[3]~8                ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[3]~8          ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[2]~10               ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[2]~10         ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[1]~12               ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[1]~12         ; out0             ;
+; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[0]~14               ; |MEM|Block2:inst6|lpm_mux0:inst2|lpm_mux:lpm_mux_component|mux_5qc:auto_generated|result_node[0]~14         ; out0             ;
++-------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Wed Nov 13 19:26:40 2024
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off MEM -c MEM
+Warning: Tcl Script File ../lpm_mux2.qip not found
+    Info: set_global_assignment -name QIP_FILE ../lpm_mux2.qip
+Info: Using vector source file "D:/quartus/quartus/mem/MEM.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found logic contention at time 45.0 ns on bus node "|MEM|gdfx_temp0[7]"
+    Info: Node "lpm_bustri:inst|dout[7]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[7]" has logic level of U
+Warning: Found logic contention at time 45.0 ns on bus node "|MEM|gdfx_temp0[6]"
+    Info: Node "lpm_bustri:inst|dout[6]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[6]" has logic level of U
+Warning: Found logic contention at time 45.0 ns on bus node "|MEM|gdfx_temp0[5]"
+    Info: Node "lpm_bustri:inst|dout[5]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[5]" has logic level of U
+Warning: Found logic contention at time 45.0 ns on bus node "|MEM|gdfx_temp0[4]"
+    Info: Node "lpm_bustri:inst|dout[4]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[4]" has logic level of U
+Warning: Found logic contention at time 45.0 ns on bus node "|MEM|gdfx_temp0[3]"
+    Info: Node "lpm_bustri:inst|dout[3]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[3]" has logic level of U
+Warning: Found logic contention at time 45.0 ns on bus node "|MEM|gdfx_temp0[2]"
+    Info: Node "lpm_bustri:inst|dout[2]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[2]" has logic level of U
+Warning: Found logic contention at time 45.0 ns on bus node "|MEM|gdfx_temp0[1]"
+    Info: Node "lpm_bustri:inst|dout[1]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[1]" has logic level of U
+Warning: Found logic contention at time 45.0 ns on bus node "|MEM|gdfx_temp0[0]"
+    Info: Node "lpm_bustri:inst|dout[0]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[0]" has logic level of U
+Warning: Found logic contention at time 45.0 ns on bus node "|MEM|gdfx_temp0[7]"
+    Info: Node "lpm_bustri:inst|dout[7]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[7]" has logic level of U
+Warning: Found logic contention at time 45.0 ns on bus node "|MEM|gdfx_temp0[6]"
+    Info: Node "lpm_bustri:inst|dout[6]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[6]" has logic level of U
+Warning: Found logic contention at time 45.0 ns on bus node "|MEM|gdfx_temp0[5]"
+    Info: Node "lpm_bustri:inst|dout[5]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[5]" has logic level of U
+Warning: Found logic contention at time 45.0 ns on bus node "|MEM|gdfx_temp0[4]"
+    Info: Node "lpm_bustri:inst|dout[4]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[4]" has logic level of U
+Warning: Found logic contention at time 45.0 ns on bus node "|MEM|gdfx_temp0[3]"
+    Info: Node "lpm_bustri:inst|dout[3]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[3]" has logic level of U
+Warning: Found logic contention at time 45.0 ns on bus node "|MEM|gdfx_temp0[2]"
+    Info: Node "lpm_bustri:inst|dout[2]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[2]" has logic level of U
+Warning: Found logic contention at time 45.0 ns on bus node "|MEM|gdfx_temp0[1]"
+    Info: Node "lpm_bustri:inst|dout[1]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[1]" has logic level of U
+Warning: Found logic contention at time 45.0 ns on bus node "|MEM|gdfx_temp0[0]"
+    Info: Node "lpm_bustri:inst|dout[0]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[0]" has logic level of U
+Warning: Found logic contention at time 55.0 ns on bus node "|MEM|gdfx_temp0[7]"
+    Info: Node "lpm_bustri:inst|dout[7]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[7]" has logic level of U
+Warning: Found logic contention at time 55.0 ns on bus node "|MEM|gdfx_temp0[6]"
+    Info: Node "lpm_bustri:inst|dout[6]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[6]" has logic level of U
+Warning: Found logic contention at time 55.0 ns on bus node "|MEM|gdfx_temp0[5]"
+    Info: Node "lpm_bustri:inst|dout[5]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[5]" has logic level of U
+Warning: Found logic contention at time 55.0 ns on bus node "|MEM|gdfx_temp0[4]"
+    Info: Node "lpm_bustri:inst|dout[4]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[4]" has logic level of U
+Warning: Found logic contention at time 55.0 ns on bus node "|MEM|gdfx_temp0[3]"
+    Info: Node "lpm_bustri:inst|dout[3]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[3]" has logic level of U
+Warning: Found logic contention at time 55.0 ns on bus node "|MEM|gdfx_temp0[2]"
+    Info: Node "lpm_bustri:inst|dout[2]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[2]" has logic level of U
+Warning: Found logic contention at time 55.0 ns on bus node "|MEM|gdfx_temp0[1]"
+    Info: Node "lpm_bustri:inst|dout[1]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[1]" has logic level of U
+Warning: Found logic contention at time 55.0 ns on bus node "|MEM|gdfx_temp0[0]"
+    Info: Node "lpm_bustri:inst|dout[0]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[0]" has logic level of U
+Warning: Found logic contention at time 55.0 ns on bus node "|MEM|gdfx_temp0[7]"
+    Info: Node "lpm_bustri:inst|dout[7]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[7]" has logic level of U
+Warning: Found logic contention at time 55.0 ns on bus node "|MEM|gdfx_temp0[6]"
+    Info: Node "lpm_bustri:inst|dout[6]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[6]" has logic level of U
+Warning: Found logic contention at time 55.0 ns on bus node "|MEM|gdfx_temp0[5]"
+    Info: Node "lpm_bustri:inst|dout[5]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[5]" has logic level of U
+Warning: Found logic contention at time 55.0 ns on bus node "|MEM|gdfx_temp0[4]"
+    Info: Node "lpm_bustri:inst|dout[4]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[4]" has logic level of U
+Warning: Found logic contention at time 55.0 ns on bus node "|MEM|gdfx_temp0[3]"
+    Info: Node "lpm_bustri:inst|dout[3]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[3]" has logic level of U
+Warning: Found logic contention at time 55.0 ns on bus node "|MEM|gdfx_temp0[2]"
+    Info: Node "lpm_bustri:inst|dout[2]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[2]" has logic level of U
+Warning: Found logic contention at time 55.0 ns on bus node "|MEM|gdfx_temp0[1]"
+    Info: Node "lpm_bustri:inst|dout[1]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[1]" has logic level of U
+Warning: Found logic contention at time 55.0 ns on bus node "|MEM|gdfx_temp0[0]"
+    Info: Node "lpm_bustri:inst|dout[0]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[0]" has logic level of U
+Warning: Found logic contention at time 65.0 ns on bus node "|MEM|gdfx_temp0[7]"
+    Info: Node "lpm_bustri:inst|dout[7]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[7]" has logic level of U
+Warning: Found logic contention at time 65.0 ns on bus node "|MEM|gdfx_temp0[6]"
+    Info: Node "lpm_bustri:inst|dout[6]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[6]" has logic level of U
+Warning: Found logic contention at time 65.0 ns on bus node "|MEM|gdfx_temp0[5]"
+    Info: Node "lpm_bustri:inst|dout[5]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[5]" has logic level of U
+Warning: Found logic contention at time 65.0 ns on bus node "|MEM|gdfx_temp0[4]"
+    Info: Node "lpm_bustri:inst|dout[4]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[4]" has logic level of U
+Warning: Found logic contention at time 65.0 ns on bus node "|MEM|gdfx_temp0[3]"
+    Info: Node "lpm_bustri:inst|dout[3]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[3]" has logic level of U
+Warning: Found logic contention at time 65.0 ns on bus node "|MEM|gdfx_temp0[2]"
+    Info: Node "lpm_bustri:inst|dout[2]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[2]" has logic level of U
+Warning: Found logic contention at time 65.0 ns on bus node "|MEM|gdfx_temp0[1]"
+    Info: Node "lpm_bustri:inst|dout[1]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[1]" has logic level of U
+Warning: Found logic contention at time 65.0 ns on bus node "|MEM|gdfx_temp0[0]"
+    Info: Node "lpm_bustri:inst|dout[0]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[0]" has logic level of U
+Warning: Found logic contention at time 65.0 ns on bus node "|MEM|gdfx_temp0[7]"
+    Info: Node "lpm_bustri:inst|dout[7]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[7]" has logic level of U
+Warning: Found logic contention at time 65.0 ns on bus node "|MEM|gdfx_temp0[6]"
+    Info: Node "lpm_bustri:inst|dout[6]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[6]" has logic level of U
+Warning: Found logic contention at time 65.0 ns on bus node "|MEM|gdfx_temp0[5]"
+    Info: Node "lpm_bustri:inst|dout[5]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[5]" has logic level of U
+Warning: Found logic contention at time 65.0 ns on bus node "|MEM|gdfx_temp0[4]"
+    Info: Node "lpm_bustri:inst|dout[4]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[4]" has logic level of U
+Warning: Found logic contention at time 65.0 ns on bus node "|MEM|gdfx_temp0[3]"
+    Info: Node "lpm_bustri:inst|dout[3]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[3]" has logic level of U
+Warning: Found logic contention at time 65.0 ns on bus node "|MEM|gdfx_temp0[2]"
+    Info: Node "lpm_bustri:inst|dout[2]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[2]" has logic level of U
+Warning: Found logic contention at time 65.0 ns on bus node "|MEM|gdfx_temp0[1]"
+    Info: Node "lpm_bustri:inst|dout[1]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[1]" has logic level of U
+Warning: Found logic contention at time 65.0 ns on bus node "|MEM|gdfx_temp0[0]"
+    Info: Node "lpm_bustri:inst|dout[0]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[0]" has logic level of U
+Warning: Found logic contention at time 75.0 ns on bus node "|MEM|gdfx_temp0[7]"
+    Info: Node "lpm_bustri:inst|dout[7]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[7]" has logic level of U
+Warning: Found logic contention at time 75.0 ns on bus node "|MEM|gdfx_temp0[6]"
+    Info: Node "lpm_bustri:inst|dout[6]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[6]" has logic level of U
+Warning: Found logic contention at time 75.0 ns on bus node "|MEM|gdfx_temp0[5]"
+    Info: Node "lpm_bustri:inst|dout[5]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[5]" has logic level of U
+Warning: Found logic contention at time 75.0 ns on bus node "|MEM|gdfx_temp0[4]"
+    Info: Node "lpm_bustri:inst|dout[4]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[4]" has logic level of U
+Warning: Found logic contention at time 75.0 ns on bus node "|MEM|gdfx_temp0[3]"
+    Info: Node "lpm_bustri:inst|dout[3]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[3]" has logic level of U
+Warning: Found logic contention at time 75.0 ns on bus node "|MEM|gdfx_temp0[2]"
+    Info: Node "lpm_bustri:inst|dout[2]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[2]" has logic level of U
+Warning: Found logic contention at time 75.0 ns on bus node "|MEM|gdfx_temp0[1]"
+    Info: Node "lpm_bustri:inst|dout[1]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[1]" has logic level of U
+Warning: Found logic contention at time 75.0 ns on bus node "|MEM|gdfx_temp0[0]"
+    Info: Node "lpm_bustri:inst|dout[0]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[0]" has logic level of U
+Warning: Found logic contention at time 75.0 ns on bus node "|MEM|gdfx_temp0[7]"
+    Info: Node "lpm_bustri:inst|dout[7]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[7]" has logic level of U
+Warning: Found logic contention at time 75.0 ns on bus node "|MEM|gdfx_temp0[6]"
+    Info: Node "lpm_bustri:inst|dout[6]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[6]" has logic level of U
+Warning: Found logic contention at time 75.0 ns on bus node "|MEM|gdfx_temp0[5]"
+    Info: Node "lpm_bustri:inst|dout[5]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[5]" has logic level of U
+Warning: Found logic contention at time 75.0 ns on bus node "|MEM|gdfx_temp0[4]"
+    Info: Node "lpm_bustri:inst|dout[4]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[4]" has logic level of U
+Warning: Found logic contention at time 75.0 ns on bus node "|MEM|gdfx_temp0[3]"
+    Info: Node "lpm_bustri:inst|dout[3]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[3]" has logic level of U
+Warning: Found logic contention at time 75.0 ns on bus node "|MEM|gdfx_temp0[2]"
+    Info: Node "lpm_bustri:inst|dout[2]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[2]" has logic level of U
+Warning: Found logic contention at time 75.0 ns on bus node "|MEM|gdfx_temp0[1]"
+    Info: Node "lpm_bustri:inst|dout[1]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[1]" has logic level of U
+Warning: Found logic contention at time 75.0 ns on bus node "|MEM|gdfx_temp0[0]"
+    Info: Node "lpm_bustri:inst|dout[0]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[0]" has logic level of U
+Warning: Found logic contention at time 85.0 ns on bus node "|MEM|gdfx_temp0[7]"
+    Info: Node "lpm_bustri:inst|dout[7]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[7]" has logic level of U
+Warning: Found logic contention at time 85.0 ns on bus node "|MEM|gdfx_temp0[6]"
+    Info: Node "lpm_bustri:inst|dout[6]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[6]" has logic level of U
+Warning: Found logic contention at time 85.0 ns on bus node "|MEM|gdfx_temp0[5]"
+    Info: Node "lpm_bustri:inst|dout[5]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[5]" has logic level of U
+Warning: Found logic contention at time 85.0 ns on bus node "|MEM|gdfx_temp0[4]"
+    Info: Node "lpm_bustri:inst|dout[4]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[4]" has logic level of U
+Warning: Found logic contention at time 85.0 ns on bus node "|MEM|gdfx_temp0[3]"
+    Info: Node "lpm_bustri:inst|dout[3]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[3]" has logic level of U
+Warning: Found logic contention at time 85.0 ns on bus node "|MEM|gdfx_temp0[2]"
+    Info: Node "lpm_bustri:inst|dout[2]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[2]" has logic level of U
+Warning: Found logic contention at time 85.0 ns on bus node "|MEM|gdfx_temp0[1]"
+    Info: Node "lpm_bustri:inst|dout[1]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[1]" has logic level of U
+Warning: Found logic contention at time 85.0 ns on bus node "|MEM|gdfx_temp0[0]"
+    Info: Node "lpm_bustri:inst|dout[0]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[0]" has logic level of U
+Warning: Found logic contention at time 85.0 ns on bus node "|MEM|gdfx_temp0[7]"
+    Info: Node "lpm_bustri:inst|dout[7]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[7]" has logic level of U
+Warning: Found logic contention at time 85.0 ns on bus node "|MEM|gdfx_temp0[6]"
+    Info: Node "lpm_bustri:inst|dout[6]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[6]" has logic level of U
+Warning: Found logic contention at time 85.0 ns on bus node "|MEM|gdfx_temp0[5]"
+    Info: Node "lpm_bustri:inst|dout[5]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[5]" has logic level of U
+Warning: Found logic contention at time 85.0 ns on bus node "|MEM|gdfx_temp0[4]"
+    Info: Node "lpm_bustri:inst|dout[4]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[4]" has logic level of U
+Warning: Found logic contention at time 85.0 ns on bus node "|MEM|gdfx_temp0[3]"
+    Info: Node "lpm_bustri:inst|dout[3]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[3]" has logic level of U
+Warning: Found logic contention at time 85.0 ns on bus node "|MEM|gdfx_temp0[2]"
+    Info: Node "lpm_bustri:inst|dout[2]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[2]" has logic level of U
+Warning: Found logic contention at time 85.0 ns on bus node "|MEM|gdfx_temp0[1]"
+    Info: Node "lpm_bustri:inst|dout[1]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[1]" has logic level of U
+Warning: Found logic contention at time 85.0 ns on bus node "|MEM|gdfx_temp0[0]"
+    Info: Node "lpm_bustri:inst|dout[0]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[0]" has logic level of U
+Warning: Found logic contention at time 95.0 ns on bus node "|MEM|gdfx_temp0[7]"
+    Info: Node "lpm_bustri:inst|dout[7]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[7]" has logic level of U
+Warning: Found logic contention at time 95.0 ns on bus node "|MEM|gdfx_temp0[6]"
+    Info: Node "lpm_bustri:inst|dout[6]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[6]" has logic level of U
+Warning: Found logic contention at time 95.0 ns on bus node "|MEM|gdfx_temp0[5]"
+    Info: Node "lpm_bustri:inst|dout[5]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[5]" has logic level of U
+Warning: Found logic contention at time 95.0 ns on bus node "|MEM|gdfx_temp0[4]"
+    Info: Node "lpm_bustri:inst|dout[4]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[4]" has logic level of U
+Warning: Found logic contention at time 95.0 ns on bus node "|MEM|gdfx_temp0[3]"
+    Info: Node "lpm_bustri:inst|dout[3]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[3]" has logic level of U
+Warning: Found logic contention at time 95.0 ns on bus node "|MEM|gdfx_temp0[2]"
+    Info: Node "lpm_bustri:inst|dout[2]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[2]" has logic level of U
+Warning: Found logic contention at time 95.0 ns on bus node "|MEM|gdfx_temp0[1]"
+    Info: Node "lpm_bustri:inst|dout[1]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[1]" has logic level of U
+Warning: Found logic contention at time 95.0 ns on bus node "|MEM|gdfx_temp0[0]"
+    Info: Node "lpm_bustri:inst|dout[0]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[0]" has logic level of U
+Warning: Found logic contention at time 95.0 ns on bus node "|MEM|gdfx_temp0[7]"
+    Info: Node "lpm_bustri:inst|dout[7]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[7]" has logic level of U
+Warning: Found logic contention at time 95.0 ns on bus node "|MEM|gdfx_temp0[6]"
+    Info: Node "lpm_bustri:inst|dout[6]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[6]" has logic level of U
+Warning: Found logic contention at time 95.0 ns on bus node "|MEM|gdfx_temp0[5]"
+    Info: Node "lpm_bustri:inst|dout[5]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[5]" has logic level of U
+Warning: Found logic contention at time 95.0 ns on bus node "|MEM|gdfx_temp0[4]"
+    Info: Node "lpm_bustri:inst|dout[4]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[4]" has logic level of U
+Warning: Found logic contention at time 95.0 ns on bus node "|MEM|gdfx_temp0[3]"
+    Info: Node "lpm_bustri:inst|dout[3]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[3]" has logic level of U
+Warning: Found logic contention at time 95.0 ns on bus node "|MEM|gdfx_temp0[2]"
+    Info: Node "lpm_bustri:inst|dout[2]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[2]" has logic level of U
+Warning: Found logic contention at time 95.0 ns on bus node "|MEM|gdfx_temp0[1]"
+    Info: Node "lpm_bustri:inst|dout[1]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[1]" has logic level of U
+Warning: Found logic contention at time 95.0 ns on bus node "|MEM|gdfx_temp0[0]"
+    Info: Node "lpm_bustri:inst|dout[0]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[0]" has logic level of U
+Warning: Found logic contention at time 105.0 ns on bus node "|MEM|gdfx_temp0[7]"
+    Info: Node "lpm_bustri:inst|dout[7]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[7]" has logic level of U
+Warning: Found logic contention at time 105.0 ns on bus node "|MEM|gdfx_temp0[6]"
+    Info: Node "lpm_bustri:inst|dout[6]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[6]" has logic level of U
+Warning: Found logic contention at time 105.0 ns on bus node "|MEM|gdfx_temp0[5]"
+    Info: Node "lpm_bustri:inst|dout[5]" has logic level of 0
+    Info: Node "lpm_bustri:inst2|dout[5]" has logic level of U
+Warning: Found logic contention at time 105.0 ns on bus node "|MEM|gdfx_temp0[4]"
+    Info: Node "lpm_bustri:inst|dout[4]" has logic level of 1
+    Info: Node "lpm_bustri:inst2|dout[4]" has logic level of U
+Warning: Truncated list of logic contention messages
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      63.03 %
+Info: Number of transitions in simulation is 7820
+Info: Quartus II Simulator was successful. 0 errors, 102 warnings
+    Info: Peak virtual memory: 178 megabytes
+    Info: Processing ended: Wed Nov 13 19:26:41 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
