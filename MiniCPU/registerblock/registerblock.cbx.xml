@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="registerblock">
+		<CBX_INST_ENTRY INSTANCE_NAME="|registerblock|lpm_decode1:inst2|lpm_decode:LPM_DECODE_component" CBX_FILE_NAME="decode_66g.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|registerblock|lpm_mux0:inst3|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_iee.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
