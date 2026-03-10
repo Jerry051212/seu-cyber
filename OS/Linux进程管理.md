@@ -135,9 +135,8 @@ int main()
 1、	设置新增系统调用的名称及编号，修改文件 arch/i386/kernel/syscall_table.S
  
 2、设置系统调用的具体内容
-在include/linux目录下添加添加头文件psta.h。在kernel目录下新建文件 psta.c ，实现函数 psta。
- 
-宏asmlinkage定义在linux/linkage.h中，表示函数的参数通过栈传递，而不是寄存器，所有的系统调用都遵循这种参数传递方式。
+在include/linux目录下添加添加头文件psta.h。在kernel目录下新建文件 psta.c ，实现函数 psta。 宏asmlinkage定义在linux/linkage.h中，表示函数的参数通过栈传递，而不是寄存器，所有的系统调用都遵循这种参数传递方式。
+
 3、使该系统调用在编译时可见，修改文件kernel/Makefile
  
 4、加上系统调用号的宏定义，修改文件include/asm-i386/unistd.h
@@ -146,15 +145,11 @@ int main()
  
 6、重新编译内核
 linux进程管理及扩展：
-1、初始状态，进程都是处于显示的状态，我们的目的是隐藏1号进程
- 
-在非root用户下执行测试程序，进程未被隐藏，用 dmesg 命令查看输出
- 
-切换到root用户，再次执行程序，结果如下，1号进程被隐藏了
- 
-更改参数on=0，被隐藏的进程将再次出现
+
+1、初始状态，进程都是处于显示的状态，我们的目的是隐藏1号进程。 非root用户下执行测试程序，进程未被隐藏，用 dmesg 命令查看输出。 切换到root用户，再次执行程序，结果如下，1号进程被隐藏了。 更改参数on=0，被隐藏的进程将再次出现
  
 2、	新增系统调用hide_user_processes
+
 （1）与上个实验一样，如果非root用户，则没有隐藏进程的权限
  
 （2）隐藏uid为0，进程名为init的进程，修改参数uid_t uid=0; char *binname="init";结果如下，对应的进程被隐藏了
