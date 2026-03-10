@@ -374,4 +374,4 @@ int main()
 
 ## 六、实验运行结果及分析
 首先，编译myshell.c文件，然后运行，分别运行ls指令,pwd指令和ls -al|wc指令查看结果，然后将ls -al|wc写入a.txt，通过cat命令将a.txt的内容写入b.txt，随后运行ps aux | grep notification >a.txt命令改写a.txt内容，最后用cat命令查看a.txt和b.txt中的内容，结果如图所示：
- 
+ ![image](https://github.com/Jerry051212/seu-cyber/blob/main/OS/shell.png)
