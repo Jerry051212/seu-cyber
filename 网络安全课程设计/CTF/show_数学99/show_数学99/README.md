@@ -19,4 +19,5 @@ b = 446045
 a / b = ERROR, b ≠ 0
 设置 signal(SIGFPE, win) 后执行有符号除法。
 经典触发方式：INT_MIN / -1 产生有符号溢出，引发 SIGFPE，直接跳进 win 函数执行 system("cat flag")（不会回到原来的返回值检查）。
-一件运行脚本show_99.py
+
+一键运行脚本show_99.py
